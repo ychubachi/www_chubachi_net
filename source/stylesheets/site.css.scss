@@ -1,67 +1,113 @@
 @charset "utf-8";
 @import "normalize";
+@import "compass";
 
-body {
-  background: #ECC561;
-  text-align: center;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+/* rem (root em) を使用して文字のサイズを設定 */
+$normal-size: 1rem;
+$large-size:  $normal-size * 1.5;
+$Large-size:  $normal-size * 2;
+
+/* 行取りに使う行の高さ */
+$line-height:        $normal-size * 2;
+$half-line-height:   $line-height / 2;
+$double-line-height: $line-height * 2;
+
+/* 背景と文字のコントラストを調整 */
+$forground-color:  lighten(black, 25%);
+$background-color: darken(white, 3%);
+
+/* 色のテーマ */
+$main-color:     lighten(blue, 25%);
+$accent-color:   darken(green, 10%);
+
+html{
   font-size: 1em;
 }
 
-.logo img {
-  height: 18.75em;
-  margin-top: 6em;
+body{
+  color:            $forground-color;
+  background-color: $background-color;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
+p{
   margin: 0;
+  font-size:   $normal-size;
+  line-height: $line-height;
+  text-indent: 1rem;
+  text-align:  justify;
+  margin-top:    $half-line-height;
+  margin-bottom: $half-line-height;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
-  }
+b{
+  color: $accent-color;
+  font-weight: normal;
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+@mixin header{
+  font-size:   $normal-size;
+  line-height: $line-height;
+
+  margin-top:    $half-line-height;
+  margin-bottom: $half-line-height;
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
+h3{
+  @include header;
+}
+
+h2{
+  @include header;
+  font-size:   $large-size;
+
+  border-left: 0.4rem solid $main-color;
+  padding-left: 1rem - 0.4rem;
+}
+
+h1{
+  @include header;
+  line-height: $double-line-height;
+  font-size:   $Large-size;
+}
+
+/*
+   a {
+   border: 1px solid white;
+   border-radius: 3px;
+   padding: 0.75em 0.7em;
+   color: white;
+   text-decoration: none;
+   transition: color 0.1s linear;
+   &:hover {
+   background: rgba(0,0,0,0.2);
+   color: white;
+   transition: all 0.15s linear;
+   }
+   }
+   }
+
+   .welcome {
+   -webkit-animation-name: welcome;
+   -webkit-animation-duration: .9s;
+   }
+
+   @-webkit-keyframes welcome {
+   from {
    -webkit-transform: scale(0);
    opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
+   }
+   50% {
+   -webkit-transform: scale(0);
+   opacity: 0;
+   }
+   82.5% {
+   -webkit-transform: scale(1.03);
+   -webkit-animation-timing-function: ease-out;
+   opacity: 1;
+   }
+   to {
+   -webkit-transform: scale(1);
+   }
+   }
+*/
