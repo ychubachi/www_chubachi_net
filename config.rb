@@ -42,3 +42,11 @@ configure :build do
   # Minify Javascript on build
   # activate :minify_javascript
 end
+
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
+  deploy.remote   = 'git@github.com:ychubachi/ychubachi.github.io.git'
+  deploy.branch   = 'master'
+  deploy.strategy = :force_push
+  deploy.build_before = true
+end
