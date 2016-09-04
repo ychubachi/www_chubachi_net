@@ -8,14 +8,15 @@ title: "“わぃしぃ”のぷち研究室"
 吾輩は猫である。名前はまだ無い。
 
 *** H3 吾輩は猫である。
+[[file:dot_example0.svg]]
 
 どこで生れたかとんと見当がつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。吾輩はここで始めて *人間* というものを見た。しかもあとで聞くと *それは書生という人間中で一番獰悪な種族* であったそうだ。この書生というのは時々我々を捕えて煮て食うという話である。しかしその当時は何という考もなかったから別段恐しいとも思わなかった。ただ彼の掌に載せられてスーと持ち上げられた時何だかフワフワした感じがあったばかりである。掌の上で少し落ちついて書生の顔を見たのがいわゆる人間というものの見始であろう。この時妙なものだと思った感じが今でも残っている。第一毛をもって装飾されべきはずの顔がつるつるしてまるで薬缶だ。その後猫にもだいぶ逢ったがこんな片輪には一度も出会わした事がない。のみならず顔の真中があまりに突起している。そうしてその穴の中から時々ぷうぷうと煙を吹く。どうも咽せぽくて実に弱った。これが人間の飲む煙草というものである事はようやくこの頃知った。
 
 * H1 こんにちはGitHub PageH1 こんにちはGitHub
+[[file:dot_example0.svg]]
 
 
 [[%E3%83%AA%E3%83%B3%E3%82%AF][リンク]]
-
 
 *** H3 PBLとは
 
@@ -39,3 +40,19 @@ hoge ee
 #+BEGIN_SRC bash
 cd hoge
 #+END_SRC
+* COMMENT 図
+#+BEGIN_SRC dot :file dot_example0.svg
+digraph {
+  graph[bgcolor="#00000000"];
+  node [fontname="MS Gothic", style="filled", fillcolor="greenyellow"];
+  lec1 [label="フレームワーク\n開発特論" shape=box]
+  lec2 [label="コラボレイティブ\n開発特論" shape=box]
+  lec3 [label="アジャイル開発特論" shape=box]
+  lec4 [label="ビジネスアプリケーション\n特別演習（PBL）" shape=oval]
+  lec1->lec3;
+  lec2->lec3;
+  lec3->lec4;
+}
+#+END_SRC
+#+RESULTS:
+[[file:dot_example0.svg]]
