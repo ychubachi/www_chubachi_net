@@ -1,5 +1,5 @@
 ---
-title: "“わぃしぃ”のぷち研究室"
+title: Home
 ---
 
 * このページは将来ホームになります
@@ -34,12 +34,13 @@ PBLとは・・・チーム学習です．
     - SNSでつぶやいたら誰かが使ってくれそうな
 
 #+BEGIN_HTML
-hoge ee
+  <!-- HTML のタグがそのまま入ります -->
 #+END_HTML
 
 #+BEGIN_SRC bash
 cd hoge
 #+END_SRC
+
 * COMMENT 図
 #+BEGIN_SRC dot :file dot_example0.svg
 digraph {

@@ -69,6 +69,33 @@ h1{
   @include header;
   line-height: $double-line-height;
   font-size:   $Large-size;
+  border-bottom: 0.25rem solid $main-color;
+  margin-bottom: $half-line-height - 0.25rem;
+  padding-left: 1rem;
+}
+
+header{
+  height: 5rem;
+}
+
+nav{
+  width: 20%;
+  float: left;
+}
+
+article{
+  width: 40rem;
+  float: left;
+}
+
+footer{
+  clear: both;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*
