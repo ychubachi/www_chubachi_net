@@ -50,3 +50,5 @@ activate :deploy do |deploy|
   deploy.strategy = :force_push
   deploy.build_before = true
 end
+
+activate :syntax, :line_numbers => true

@@ -8,10 +8,14 @@
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
+
+    <!-- for SyntaxHighLighter -->
     <%= javascript_include_tag 'syntaxhighlighter/shCore.js'%>
     <%= javascript_include_tag 'syntaxhighlighter/shBrushJScript.js'%>
     <%= stylesheet_link_tag 'syntaxhighlighter/shCore.css' %>
     <%= stylesheet_link_tag 'syntaxhighlighter/shThemeDefault.css' %>
+
+    <!-- for middleman-syntax -->
     <style>
       <%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %>
     </style>
