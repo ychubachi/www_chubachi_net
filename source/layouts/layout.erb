@@ -15,10 +15,6 @@
     <%= stylesheet_link_tag 'syntaxhighlighter/shCore.css' %>
     <%= stylesheet_link_tag 'syntaxhighlighter/shThemeDefault.css' %>
 
-    <!-- for middleman-syntax -->
-    <style>
-      <%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %>
-    </style>
   </head>
 
   <body class="<%= page_classes %>">
