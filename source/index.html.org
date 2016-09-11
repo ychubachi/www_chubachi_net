@@ -14,9 +14,6 @@ title: Home
 [[file:dot_example0.svg]]
 
 
-[[%E3%83%AA%E3%83%B3%E3%82%AF][リンク]]
-
-
 #+BEGIN_HTML
   <!-- HTML のタグがそのまま入ります -->
 #+END_HTML
