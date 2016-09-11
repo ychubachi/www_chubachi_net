@@ -23,9 +23,28 @@ title: Home
   <!-- HTML のタグがそのまま入ります -->
 #+END_HTML
 
-#+BEGIN_SRC bash
-cd hoge
+#+BEGIN_SRC ruby
+def hoge
+  puts 'hoge'
+end
 #+END_SRC
+
+#+BEGIN_HTML
+<pre class="brush: js">
+function foo()
+{
+  var x = 100;
+}
+</pre>
+#+END_HTML
+
+#+BEGIN_HTML
+<% code("ruby", :line_numbers => true, :start_line => 7) do %>
+def my_cool_method(message)
+  puts message
+end
+<% end %>
+#+END_HTML
 
 * COMMENT 図
 #+BEGIN_SRC dot :file dot_example0.svg
