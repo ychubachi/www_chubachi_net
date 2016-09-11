@@ -52,3 +52,6 @@ activate :deploy do |deploy|
 end
 
 activate :syntax, :line_numbers => true
+
+# Bootstrap
+activate :bh

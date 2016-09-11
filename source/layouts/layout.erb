@@ -15,10 +15,14 @@
     <%= stylesheet_link_tag 'syntaxhighlighter/shCore.css' %>
     <%= stylesheet_link_tag 'syntaxhighlighter/shThemeDefault.css' %>
 
+    <%= stylesheet_link_tag bootstrap_css %>
   </head>
 
   <body class="<%= page_classes %>">
-    <header> Header <!-- ヘッダ --> </header>
+    <header>
+      Header <!-- ヘッダ -->
+      <%= alert_box 'You accepted the Terms of service.', dismissible: true %>
+    </header>
     <div>
       <nav> <%= partial 'navi' %> <!-- ナビ --> </nav>
       <article>

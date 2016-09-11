@@ -17,3 +17,6 @@ gem "middleman-syntax"
 
 # Org template
 gem 'org-ruby', '>= 0.6.2'
+
+# Bootstrap
+gem 'bh', '~> 1.2'
