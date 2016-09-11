@@ -3,6 +3,7 @@
 /* @import "compass"; */
 
 /* rem (root em) を使用して文字のサイズを設定 */
+$root-size: 1em;
 $normal-size: 1rem;
 $large-size:  $normal-size * 1.5;
 $Large-size:  $normal-size * 2;
@@ -21,12 +22,14 @@ $main-color:     lighten(blue, 25%);
 $accent-color:   darken(green, 10%);
 
 html{
-  font-size: 1em;
+  font-size: $root-size;
 }
 
 body{
   color:            $forground-color;
   background-color: $background-color;
+
+  font-size: $normal-size;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
