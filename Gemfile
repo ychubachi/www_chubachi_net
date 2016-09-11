@@ -16,6 +16,7 @@ gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy'
 gem "middleman-syntax"
 
 # Org template
+gem 'coderay'
 gem 'org-ruby', '>= 0.6.2'
 
 # Bootstrap

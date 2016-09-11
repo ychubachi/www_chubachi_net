@@ -8,20 +8,21 @@
       = current_page.data.title || "Middleman"
       \- YCのぷち研究室
     %link{:href => "//fonts.googleapis.com/css?family=Lato:300,400", :rel => "stylesheet", :type => "text/css"}
-    = stylesheet_link_tag :site
-    = javascript_include_tag :all
     = stylesheet_link_tag bootstrap_css
     = partial 'syntaxhighlighter'
-  %body{:class => page_classes}
-    %header
-      Header
-      / ヘッダ
-      = alert_box 'You accepted the Terms of service.', dismissible: true
+    = stylesheet_link_tag 'highlight'
+
+    = stylesheet_link_tag :site
+    = javascript_include_tag :all
+  %body{:class => 'page_classes container'}
     %nav
       = partial 'navi'
-      / ナビ
+    %header
+      = alert_box 'You accepted the Terms of service.', dismissible: true
     %article
-      = yield
+      %section
+        = yield
+      %aside
     %footer
       Copyright (C) Y.Chubachi 2016
       = partial 'syntaxhighlighter_all'
