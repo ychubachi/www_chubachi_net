@@ -1,15 +1,14 @@
 #+TITLE: Title \linebreak Sub-title
 #+AUTHOR: 産業技術大学院大学 \linebreak 中鉢 欣秀
 #+DATE: yyyy-mm-dd
-#+OPTIONS: toc:nil
 
 #+BEGIN_HTML
 ---
-title: hoge
+title: home.org toc
 ---
 #+END_HTML
 
-* H1 こんにちは
+* H1 こんにちは -> H2
 ** H2 .htmlを.erbにするには・・・
 *** H3
 **** H4
