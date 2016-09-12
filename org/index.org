@@ -1,6 +1,8 @@
+#+begin_html
 ---
 title: Home
 ---
+#+end_html
 
 * AIIT 中鉢研究室
 ** 自己紹介
