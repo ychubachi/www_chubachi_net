@@ -15,11 +15,13 @@
     = javascript_include_tag :all
   %body{:class => 'page_classes container'}
     %header
-      %nav
-        = partial 'navi'
+      %h1 YCのぷち研究室
+    %nav
+      = partial 'navi'
     %article
       %section
         = yield
       %aside
     %footer
+      %hr
       Copyright (C) Y.Chubachi 2016
