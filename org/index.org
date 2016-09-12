@@ -8,3 +8,29 @@ title: Home
 ** 自己紹介
 
 産業技術大学院大学（AIIT）の中鉢欣秀と申します．主に授業関連の情報を整理して掲載していきます．
+
+#+begin_src ruby
+def func
+  puts 'hoge'
+end
+#+end_src
+
+* COMMENT src
+[[http://emacs.stackexchange.com/questions/9832/how-to-insert-the-content-of-a-org-modes-code-block-inside-precode-tags-whe][org export - How to insert the content of a org-mode's code block inside <pre><code> tags when exporting to HTML? - Emacs Stack Exchange]]
+
+#+begin_src elisp
+(defun rasmus/org-html-wrap-blocks-in-code (src backend info)
+  "Wrap a source block in <pre><code class=\"lang\">.</code></pre>"
+  (when (org-export-derived-backend-p backend 'html)
+    (replace-regexp-in-string
+     "\\(</pre>\\)" "</code>\n\\1"
+     (replace-regexp-in-string "<pre class=\"src src-\\([^\"]*?\\)\">"
+                               "<pre>\n<code class=\"\\1\">\n" src))))
+
+(add-to-list 'org-export-filter-src-block-functions
+             'rasmus/org-html-wrap-blocks-in-code)
+
+(setq org-html-htmlize-output-type nil)
+#+end_src
+
+#+RESULTS:
