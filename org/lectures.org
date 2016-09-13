@@ -1,11 +1,15 @@
+#+title: Lecture
+
 #+begin_html
 ---
 title: Lectures
 ---
 #+end_html
 
-* Lectures
-** 情報アーキテクチャ特論3
+* 担当している授業
+** [ISA3] 情報アーキテクチャ特論3
 - TBD
-** コラボレイティブ開発特論
+** [COM2] コミュニケーション技術特論2
+- TBD
+** [CDEV] コラボレイティブ開発特論
 - TBD

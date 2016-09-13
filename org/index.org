@@ -9,6 +9,10 @@ title: Home
 
 産業技術大学院大学（AIIT）の中鉢欣秀と申します．主に授業関連の情報を整理して掲載していきます．
 
+#+begin_html
+<!-- src -->
+#+end_html
+
 #+begin_src ruby
 def func
   puts 'hoge'
@@ -17,6 +21,7 @@ end
 
 * COMMENT src
 [[http://emacs.stackexchange.com/questions/9832/how-to-insert-the-content-of-a-org-modes-code-block-inside-precode-tags-whe][org export - How to insert the content of a org-mode's code block inside <pre><code> tags when exporting to HTML? - Emacs Stack Exchange]]
+
 
 #+begin_src elisp
 (defun rasmus/org-html-wrap-blocks-in-code (src backend info)
@@ -34,3 +39,40 @@ end
 #+end_src
 
 #+RESULTS:
+
+#+begin_src elisp
+  (setq org-html-htmlize-output-type "inline-css")
+#+end_src
+
+#+RESULTS:
+: inline-css
+
+#+RESULTS:
+
+#+begin_src elisp
+  (defun rasmus/org-html-wrap-blocks-in-code (src backend info)
+    "Wrap a source block in <pre><code class=\"lang\">.</code></pre>"
+    (when (org-export-derived-backend-p backend 'html)
+      (message (concat ">" src "<"))
+  ))
+
+  (add-to-list 'org-export-filter-src-block-functions
+               'rasmus/org-html-wrap-blocks-in-code)
+#+end_src
+
+#+RESULTS:
+| rasmus/org-html-wrap-blocks-in-code |
+
+#+begin_src elisp
+  (defun rasmus/org-html-wrap-blocks-in-code (src backend info)
+    "Wrap a source block in <pre><code class=\"lang\">.</code></pre>"
+    (when (org-export-derived-backend-p backend 'html)
+      (concat ">" src "<")
+  ))
+
+  (add-to-list 'org-export-filter-src-block-functions
+               'rasmus/org-html-wrap-blocks-in-code)
+#+end_src
+
+#+RESULTS:
+| nil | rasmus/org-html-wrap-blocks-in-code |

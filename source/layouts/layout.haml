@@ -15,7 +15,8 @@
     = javascript_include_tag :all
   %body{:class => 'page_classes container'}
     %header
-      %h1 YCのぷち研究室
+      %h1
+        = current_page.data.title || "Middleman"
     %nav
       = partial 'navi'
     %article
