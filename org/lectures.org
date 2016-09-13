@@ -11,5 +11,5 @@ title: Lectures
 - TBD
 ** [COM2] コミュニケーション技術特論2
 - TBD
-** [CDEV] コラボレイティブ開発特論
+** [CLDV] コラボレイティブ開発特論
 - TBD
