@@ -1,0 +1,24 @@
+#+title: コラボレイティブ開発特論
+
+#+begin_html
+---
+title: コラボレイティブ開発特論
+---
+#+end_html
+
+* 教材
+
+- この授業は○○です．
+- [[https://github.com/ychubachi/collaborative_development][ychubachi/collaborative_development]]
+
+*** collaborative_development_hoge
+
+*** L3 関連するWebページ（整理しなきゃ・・）
+- [[https://github.com/ychubachi/enpit/wiki][Home · ychubachi/enpit Wiki]]
+  - Wiki
+
+- [[https://github.com/ychubachi/enpit][ychubachi/enpit: See Wiki for more information https://github.com/ychubachi/enpit/wiki]]
+  - 2015年度
+
+- [[https://github.com/ychubachi/enpit_bizapp_practice][ychubachi/enpit_bizapp_practice: enPiT-ビジネスアプリケーション演習]]
+  - 2013年度

@@ -6,10 +6,34 @@ title: Lectures
 ---
 #+end_html
 
-* 担当している授業
+* L1 担当している授業
 ** [ISA3] 情報アーキテクチャ特論3
 - TBD
 ** [COM2] コミュニケーション技術特論2
 - TBD
-** [CLDV] コラボレイティブ開発特論
-- TBD
+* 授業の構成
+
+| 名称          | 見出し | コマ数      | 単位             | beamer |
+|---------------+--------+-------------+------------------+--------|
+| lecture       | 授業   | 全15コマ    | repo             |        |
+| part          | 部     | 1~4コマ程度 | folder (sub mod) |        |
+| chapter       | 章     | 1コマ       | file             |        |
+| section       | 節     | 20〜40分    | *x1              |        |
+| subsection    | 項     | 10〜20項    | *x2              | frame  |
+| subsubsection | 目     |             | *x3              | block  |
+
+* リポジトリの構成
+- repo/
+  - slides/
+    - lec_name.org
+    - p01_introduction/
+      - s01_introduction.org
+      - s02_background.org
+    - p02_hoge/
+      _ s03_hoge.org
+      - s04_text.org
+    - .../
+  - figures/
+    - fig01.svg
+    - fig02.svg
+    - ...

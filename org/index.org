@@ -9,6 +9,8 @@ title: Home
 
 産業技術大学院大学（AIIT）の中鉢欣秀と申します．主に授業関連の情報を整理して掲載していきます．
 
+- [[file:lectures.org][授業]]
+
 #+begin_html
 <!-- src -->
 #+end_html

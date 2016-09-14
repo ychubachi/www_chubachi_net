@@ -56,9 +56,17 @@ b{
   margin-bottom: $half-line-height;
 }
 
+h4:before{
+  content: "○"
+}
+
 h3{
   @include header;
   font-weight: 700;
+}
+
+h3:before{
+  content: ""
 }
 
 h2{
